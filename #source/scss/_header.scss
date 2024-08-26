@@ -1,0 +1,82 @@
+.header {
+  padding-top: 24px;
+  .container {
+  }
+  .header__container {
+  }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+  .header__logo {
+    img {
+      width: 100%;
+    }
+    @include mobile {
+      max-width: 145.5px;
+    }
+  }
+  .header__signUp {
+    padding: 12px 24px;
+    background-color: $main;
+    color: #fff;
+    font-weight: 700;
+    line-height: 150%;
+    transition: background 0.1s ease;
+    &:hover {
+      background-color: $accent-color;
+    }
+    @include mobile {
+      padding: 10px 24px;
+    }
+  }
+  .signUp {
+  }
+  .header__bottom {
+  }
+  .header__nav {
+    @include mobile {
+      padding: 24px 0;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 46px;
+      li {
+        color: #585858;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.1s ease;
+        &.current {
+          color: $accent-color;
+          &::after {
+            width: 100%;
+          }
+        }
+        &:hover {
+          color: $accent-color;
+          &::after {
+            width: 100%;
+          }
+        }
+        &::after {
+          content: "";
+          width: 0;
+          height: 1px;
+          position: absolute;
+          background-color: $accent-color;
+          bottom: -4px;
+          left: 0;
+          transition: width 0.2s ease;
+        }
+      }
+    }
+  }
+}

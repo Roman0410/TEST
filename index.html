@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markify</title>
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__top">
+          <a href="" class="header__logo">
+            <img src="./img/logo.svg" alt="" />
+          </a>
+          <button class="header__signUp signUp">Sign Up</button>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__nav">
+            <ul>
+              <li class="nav__item current" data-menu="home">Home</li>
+              <li class="nav__item" data-menu="aboutUs">About us</li>
+              <li class="nav__item" data-menu="services">Services</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="content" id="content">
+      <div class="container content__container">
+        <div class="content__item content__home current" data-content="home">
+          <div class="content__img">
+            <img src="./img/homeIMG.svg" alt="People analyzing data." />
+          </div>
+          <div class="content__main">
+            <h2 class="content__title home">
+              Lorem ipsum dolor sit amet consectetur. Mi cras
+              <span>non non quis.</span>
+            </h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet consectetur. Faucibus nunc et mattis at
+              feugiat sagittis volutpat. At netus diam ipsum cras turpis
+              imperdiet diam vel consequat. Ultrices in faucibus sodales sed
+              sed. Enim aenean dignissim sed a non mollis. Sed ut arcu enim
+              ullamcorper.
+            </p>
+          </div>
+        </div>
+        <div class="content__item content__about" data-content="aboutUs">
+          <div class="content__img">
+            <img src="./img/aboutIMG.svg" alt="Two people shaking hands." />
+          </div>
+          <div class="content__main">
+            <h2 class="content__title">About us</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet consectetur. Faucibus nunc et mattis at
+              feugiat sagittis volutpat. At netus diam ipsum cras turpis
+              imperdiet diam vel consequat. Ultrices in faucibus sodales sed
+              sed. Enim aenean dignissim sed a non mollis. Sed ut arcu enim
+              ullamcorper.
+            </p>
+          </div>
+        </div>
+        <div class="content__item content__services" data-content="services">
+          <div class="content__img">
+            <img
+              src="./img/servicesIMG.svg"
+              alt="Magnet attracting money and likes."
+            />
+          </div>
+          <div class="content__main">
+            <h2 class="content__title">Services</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet consectetur. Faucibus nunc et mattis at
+              feugiat sagittis volutpat. At netus diam ipsum cras turpis
+              imperdiet diam vel consequat. Ultrices in faucibus sodales sed
+              sed. Enim aenean dignissim sed a non mollis. Sed ut arcu enim
+              ullamcorper.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="marquee">
+      <div class="marquee__line marquee1">
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+      </div>
+
+      <div class="marquee__line marquee2">
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+        <div>WE BUY TRAFFIC</div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer__logo">
+          <img src="./img/logo.svg" alt="" />
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li>
+              <a href="#content" class="nav__item" data-menu="home">Home</a>
+            </li>
+            <li>
+              <a href="#content" class="nav__item" data-menu="aboutUs"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="#content" class="nav__item" data-menu="services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#content">Terms of Use</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__soc-list">
+          <a href="#" class="footer__soc-link">
+            <img src="./img/facebook.svg" alt="Facebook logo" />
+          </a>
+          <a href="#" class="footer__soc-link">
+            <img src="./img/linkedIn.svg" alt="LinkedIn logo" />
+          </a>
+          <a href="#" class="footer__soc-link">
+            <img src="./img/instagram.svg" alt="Instagram logo" />
+          </a>
+        </div>
+        <a href="tel:000000000" class="footer__contact-us">Contact us</a>
+        <a href="mailto:support@markify.com" class="footer__support"
+          >support@markify.com</a
+        >
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

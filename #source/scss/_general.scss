@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  background-image: url("../../img/background.svg");
+  font-family: "Open Sans", sans-serif;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  @include mobile {
+    background-image: url("../../img/mob-back.svg");
+  }
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: inherit;
+}
+img {
+  display: block;
+}
+button {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+.container {
+  max-width: 1172px;
+  width: 100%;
+  padding: 0px 16px;
+  margin: 0 auto;
+}
