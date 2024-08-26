@@ -56,6 +56,9 @@
     position: relative;
     width: fit-content;
     z-index: 1;
+    @include mobile {
+      font-size: 28px;
+    }
     &:not(.home) {
       &::after {
         content: "";
